@@ -4,12 +4,8 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: #101014;
-}
-
-.gameboy-container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
 }
 
 .gameboy-main {
@@ -18,6 +14,11 @@ body {
   background-color: #f5001e;
   margin: 0 auto;
   border-radius: 9px 9px 15px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 1s;
+  transform-origin: 50% -3%;
+  transform: scale(1);
 }
 
 .lower-round {
@@ -180,7 +181,8 @@ body {
   position: relative;
   top: 6px;
   right: 3px;
-  color: rgb(87, 71, 71);
+  transition: all 0.1s;
+  color: rgba(87, 71, 71, 0.55);
 }
 
 .b-button {
@@ -208,7 +210,7 @@ body {
   position: relative;
   top: 6px;
   right: 3px;
-  color: rgb(87, 71, 71);
+  color: rgba(87, 71, 71, 0.55);
 }
 
 .controller-container {
@@ -324,11 +326,12 @@ body {
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-right: 10px solid rgb(87, 71, 71);
+  border-right: 10px solid rgba(87, 71, 71, 0.55);
   position: relative;
   left: 4px;
   top: 4px;
   z-index: 1;
+  transition: all 0.1s;
 }
 
 .arrow-right {
@@ -336,12 +339,13 @@ body {
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 10px solid rgb(87, 71, 71);
+  border-left: 10px solid rgba(87, 71, 71, 0.55);
   opacity: 0.85;
   position: relative;
   left: 47px;
   bottom: 10px;
   z-index: 1;
+  transition: all 0.1s;
 }
 
 .round-middle {
@@ -361,7 +365,8 @@ body {
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 10px solid rgb(87, 71, 71);
+  border-bottom: 10px solid rgba(87, 71, 71, 0.55);
+  transition: all 0.1s;
   opacity: 0.85;
   position: relative;
   top: 4px;
@@ -373,7 +378,8 @@ body {
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 10px solid rgb(87, 71, 71);
+  border-top: 10px solid rgba(87, 71, 71, 0.55);
+  transition: all 0.1s;
   opacity: 0.85;
   position: relative;
   top: 25px;
